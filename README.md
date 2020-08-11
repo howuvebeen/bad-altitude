@@ -13,11 +13,6 @@
 <strong>Bad Altitude is a 2D strategy game in which the player tactically balances between boring his friend to sleep and making him more fun during their flight.</strong>
 <br />
 <br />
-Due to COVID-19 pandemic, people long for oversea trips. They miss the beautiful ocean and deviation from the routine. 
-<br />
-However, what comes first? The boring flight or memorable trip? This game humorously addresses the boredom in long flights and reminds people with the forgotten pain that always comes before they go on vacation.  
-<br />
-<br />
 <code>Unity</code>
 ·
 <code>C#</code>
@@ -40,13 +35,17 @@ However, what comes first? The boring flight or memorable trip? This game humoro
 * [Building Process](#building-process)
   * [Ideation](#ideation)
   * [User Interface](#user-interface)
+  * [Game Balancing](#game-balancing)
 * [License](#license)
 
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
-This is the personal project I am working on. It's currently in developing process. Detailed information will be updated shortly in this document.
+Due to COVID-19 pandemic, people long for oversea trips. They miss the beautiful ocean and deviation from the routine. However, what comes first? The boring flight or memorable trip? This game humorously addresses the boredom in long flights and reminds people with the forgotten pain that always comes before they go on vacation.  
+
+This is the personal project I am working on. It's currently in developing process. 
+Detailed information will be updated shortly in this document.
 
 ## Built With
 
@@ -91,6 +90,8 @@ Visit the link to play the game.
 
 ## User Interface
 
+
+## Game Balancing
 
 
 <!-- LICENSE -->
