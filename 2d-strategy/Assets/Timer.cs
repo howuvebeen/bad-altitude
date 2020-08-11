@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     public float timeStart = 60;
     public Text textBox;
+    
     // Start is called before the first frame update
     void Start()
     {
