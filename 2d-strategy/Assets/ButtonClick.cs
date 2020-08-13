@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class ButtonClick : MonoBehaviour
 {
+    public Player player;
+
     public void ClickNetflix () {
-        TakeDamage(10);
+        player.TakeDamage(10);
     }
 
     public void ClickGame () {
-        TakeBenefit(8);
+        player.TakeBenefit(8);
     }
 
     public void ClickMusic () {
-        TakeDamage(4);
+        player.TakeDamage(4);
     }
 
     public void ClickStory () {
-        TakeDamage(5);
+        player.TakeDamage(5);
     }
 }

@@ -23,14 +23,14 @@ public class Player : MonoBehaviour
     }
 
     // Decrease the health
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
 
     // Increase the health
-    void TakeBenefit(int benefit)
+    public void TakeBenefit(int benefit)
     {
         currentHealth += benefit;
         healthBar.SetHealth(currentHealth);
