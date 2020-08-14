@@ -21,4 +21,5 @@ public class ButtonClick : MonoBehaviour
     public void ClickStory () {
         player.TakeDamage(5);
     }
+
 }

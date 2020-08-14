@@ -19,6 +19,10 @@ public class Timer : MonoBehaviour
     {
         timeStart -= Time.deltaTime;
         textBox.text = Mathf.Round(timeStart).ToString();
+    }
 
+    public void ClickSleep () {
+        timeStart -= 20;
+        textBox.text = Mathf.Round(timeStart).ToString();
     }
 }
