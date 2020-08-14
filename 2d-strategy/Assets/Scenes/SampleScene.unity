@@ -799,6 +799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeStart: 100
   textBox: {fileID: 1565105524}
+  player: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1001,6 +1002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeStart: 100
   textBox: {fileID: 1565105524}
+  player: {fileID: 1377171214}
 --- !u!1 &756466912
 GameObject:
   m_ObjectHideFlags: 0

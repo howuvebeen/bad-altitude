@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     public float timeStart = 60;
     public Text textBox;
+    public Player player;
     
     // Start is called before the first frame update
     void Start()
@@ -24,5 +25,6 @@ public class Timer : MonoBehaviour
     public void ClickSleep () {
         timeStart -= 20;
         textBox.text = Mathf.Round(timeStart).ToString();
+        player.TakeBenefit(30);
     }
 }
