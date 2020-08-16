@@ -42,6 +42,8 @@ public class Timer : MonoBehaviour
         timeStart -= 20;
         textBox.text = Mathf.Round(timeStart).ToString();
         player.TakeBenefit(30);
+        sleepButton.interactable = false;
+        timeSlider = 0;
     }
 
 }
