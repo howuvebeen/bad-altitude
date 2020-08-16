@@ -9,7 +9,7 @@ public class ButtonClick : MonoBehaviour
     public Button netflixButton, gameButton, musicButton, storyButton;
 
     public void ClickNetflix () {
-        player.TakeDamage(10);
+        player.TakeDamage(80);
         netflixButton.interactable = false;
         StartCoroutine(DelayNetflix());
     }

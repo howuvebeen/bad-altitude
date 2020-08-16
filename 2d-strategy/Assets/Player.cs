@@ -26,6 +26,9 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        if (currentHealth < 0){
+            currentHealth = 0;
+        }
         healthBar.SetHealth(currentHealth);
     }
 
@@ -33,6 +36,9 @@ public class Player : MonoBehaviour
     public void TakeBenefit(int benefit)
     {
         currentHealth += benefit;
+        if (currentHealth > 100){
+            currentHealth = 100;
+        }
         healthBar.SetHealth(currentHealth);
     }
 

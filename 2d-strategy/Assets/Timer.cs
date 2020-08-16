@@ -6,13 +6,22 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float timeStart = 60;
+    public float timeSlider = 0;
+
     public Text textBox;
+    public Button sleepButton;
+    public Slider slider;
+
     public Player player;
+    public HealthBar healthBar;
+    
+
     
     // Start is called before the first frame update
     void Start()
     {
         textBox.text = timeStart.ToString();
+        sleepButton.interactable = false;
     }
 
     // Update is called once per frame
@@ -20,6 +29,13 @@ public class Timer : MonoBehaviour
     {
         timeStart -= Time.deltaTime;
         textBox.text = Mathf.Round(timeStart).ToString();
+        if (slider.value <= 25) {
+            timeSlider += Time.deltaTime;
+            if (timeSlider > 5){
+                sleepButton.interactable = true;
+                timeSlider = 0;
+            } 
+        }
     }
 
     public void ClickSleep () {
@@ -27,4 +43,5 @@ public class Timer : MonoBehaviour
         textBox.text = Mathf.Round(timeStart).ToString();
         player.TakeBenefit(30);
     }
+
 }

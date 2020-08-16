@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 226002188}
   - component: {fileID: 226002189}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -456,6 +456,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1377171214}
+  netflixButton: {fileID: 756466916}
+  gameButton: {fileID: 1620952560}
+  musicButton: {fileID: 1392052616}
+  storyButton: {fileID: 226002188}
 --- !u!1 &283739432
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,8 +802,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeStart: 100
+  timeSlider: 0
   textBox: {fileID: 1565105524}
-  player: {fileID: 0}
+  sleepButton: {fileID: 627038326}
+  slider: {fileID: 2022497584}
+  player: {fileID: 1377171214}
+  healthBar: {fileID: 2022497583}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -825,7 +833,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 49.057266
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -851,7 +859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 350, y: 200, z: 0}
+  m_LocalPosition: {x: 720, y: 522, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -910,7 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+  m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -958,7 +966,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1001,8 +1009,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeStart: 100
+  timeSlider: 0
   textBox: {fileID: 1565105524}
+  sleepButton: {fileID: 627038326}
+  slider: {fileID: 2022497584}
   player: {fileID: 1377171214}
+  healthBar: {fileID: 2022497583}
 --- !u!1 &756466912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +1029,7 @@ GameObject:
   - component: {fileID: 756466916}
   - component: {fileID: 756466917}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NetflixButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,7 +1115,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1146,6 +1158,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1377171214}
+  netflixButton: {fileID: 756466916}
+  gameButton: {fileID: 1620952560}
+  musicButton: {fileID: 1392052616}
+  storyButton: {fileID: 226002188}
 --- !u!1 &792079599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,7 +1568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  m_Color: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1687,7 +1703,7 @@ GameObject:
   - component: {fileID: 1392052616}
   - component: {fileID: 1392052617}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MusicButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1773,7 +1789,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1816,6 +1832,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1377171214}
+  netflixButton: {fileID: 756466916}
+  gameButton: {fileID: 1620952560}
+  musicButton: {fileID: 1392052616}
+  storyButton: {fileID: 226002188}
 --- !u!1 &1460014467
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,7 +2290,7 @@ GameObject:
   - component: {fileID: 1620952560}
   - component: {fileID: 1620952561}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2356,7 +2376,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2399,6 +2419,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1377171214}
+  netflixButton: {fileID: 756466916}
+  gameButton: {fileID: 1620952560}
+  musicButton: {fileID: 1392052616}
+  storyButton: {fileID: 226002188}
 --- !u!1 &1630281376
 GameObject:
   m_ObjectHideFlags: 0
