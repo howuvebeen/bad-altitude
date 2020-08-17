@@ -29,6 +29,7 @@ public class Timer : MonoBehaviour
     {
         timeStart -= Time.deltaTime;
         textBox.text = Mathf.Round(timeStart).ToString();
+    
         if (slider.value <= 25) {
             timeSlider += Time.deltaTime;
             if (timeSlider > 5){
