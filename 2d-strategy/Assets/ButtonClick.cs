@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ButtonClick : MonoBehaviour
 {
     public Player player;
-    public Button netflixButton, gameButton, musicButton, storyButton;
+    public Button netflixButton, gameButton, musicButton, storyButton, teaButton, coffeeButton;
 
     public void ClickNetflix () {
         player.TakeDamage(10);
@@ -53,4 +53,11 @@ public class ButtonClick : MonoBehaviour
         storyButton.interactable = true;
     }
 
+    public void ClickTea () {
+        teaButton.gameObject.SetActive(false);
+    }
+
+    public void ClickCoffee () {
+        coffeeButton.gameObject.SetActive(false);
+    }
 }
