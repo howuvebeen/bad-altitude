@@ -18,7 +18,7 @@ public class LevelScript : MonoBehaviour
         levelThreeButton.interactable = false;
     }
 
-    public void levelToLoad(int level)
+    public void ClickLevel(int level)
     {
         SceneManager.LoadScene(level);
     }
