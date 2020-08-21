@@ -27,7 +27,8 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
   * [Rules](#rules)
-  * [Scoring](#scoring)
+  * [Items](#items)
+  * [Randomness](#randomness)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Running the Program](#running-the-program)
@@ -53,12 +54,56 @@ Detailed information will be updated shortly in this document.
 
 ## Rules
 
+Win
+* Balance mood status appropriately until the end of the flight
 
+Lose
+* Once the mood status hits zero, the level ends
 
-## Scoring
+Tips
+* Only using the fun items is not enough to endure the entire flight
+* Only using the boring items results in the mood status hitting zero 
+* The mood status decreases slowly over time but it decreases faster once the mood is closer to zero
 
+## Items
 
+1. Netflix
+    * Shows with high rating ( >= 4 stars): has cool time once used, makes your friend happy
+    * Shows with low rating ( <= 2 stars): has cool time once used, makes your friend bored
 
+2. Game
+    * Lets your friend win: has cool time once used, makes your friend happy
+    * Lets your friend lose: has cool time once used, makes your friend bored
+
+3. Music
+    * Turns a loud song: has cool time once used, makes your friend happy
+    * Turns a calm song: has cool time once used, makes your friend bored
+
+4. Story
+    * Do funny jokes: has cool time once used, makes your friend happy
+    * Do bad jokes: has cool time once used, makes your friend bored
+
+5. Coffee
+    * Used with the items that makes your friend happy: can be used once, makes your friend happy 1.3 times
+    * Used with the items that makes your friend bored: can be used once, cancels out the effect of the item
+
+6. Tea
+    * Used with the items that makes your friend happy: can be used once, cancels out the effect of the item
+    * Used with the items that makes your friend bored: can be used once, makes your friend bored 1.3 times
+
+7. Sleep
+    * A booster that can be used when your friend is bored for more than 5 seconds. Your friend becomes happy and time flies faster
+    
+## Randomness
+
+Challenges
+* unstable flight
+* baby crying
+
+Benefits
+* in-flight meal
+
+    
 <!-- GETTING STARTED -->
 # Getting Started
 
@@ -87,6 +132,7 @@ Visit the link to play the game.
 
 ## Ideation
 
+![ideation](/images/ideation.png)
 
 ## User Interface
 
