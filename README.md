@@ -68,28 +68,28 @@ Tips
 ## Items
 
 1. Netflix
-    * Shows with high rating ( >= 4 stars): has cool time once used, makes your friend happy
-    * Shows with low rating ( <= 2 stars): has cool time once used, makes your friend bored
+    * Watches a show with high rating ( >= 4 stars): has cool time once used, makes your friend happy
+    * Watches a show with low rating ( <= 2 stars): has cool time once used, makes your friend bored
 
 2. Game
     * Lets your friend win: has cool time once used, makes your friend happy
     * Lets your friend lose: has cool time once used, makes your friend bored
 
 3. Music
-    * Turns a loud song: has cool time once used, makes your friend happy
-    * Turns a calm song: has cool time once used, makes your friend bored
+    * Listens to a loud song: has cool time once used, makes your friend happy
+    * Listens to a calm song: has cool time once used, makes your friend bored
 
 4. Story
     * Do funny jokes: has cool time once used, makes your friend happy
     * Do bad jokes: has cool time once used, makes your friend bored
 
 5. Coffee
-    * Used with the items that makes your friend happy: can be used once, makes your friend happy 1.3 times
-    * Used with the items that makes your friend bored: can be used once, cancels out the effect of the item
+    * Used with an item that makes your friend happy: can be used once, makes your friend happy 1.3 times
+    * Used with an item that makes your friend bored: can be used once, cancels out the effect of the item
 
 6. Tea
-    * Used with the items that makes your friend happy: can be used once, cancels out the effect of the item
-    * Used with the items that makes your friend bored: can be used once, makes your friend bored 1.3 times
+    * Used with an item that makes your friend happy: can be used once, cancels out the effect of the item
+    * Used with an item that makes your friend bored: can be used once, makes your friend bored 1.3 times
 
 7. Sleep
     * A booster that can be used when your friend is bored for more than 5 seconds. Your friend becomes happy and time flies faster
