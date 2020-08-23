@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour
 
     public Player player;
     public HealthBar healthBar;
-    
 
     
     // Start is called before the first frame update

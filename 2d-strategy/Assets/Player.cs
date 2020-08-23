@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int maxHealth= 100;
-    public int currentHealth;
+    public float damage = 0;
+    public float maxHealth= 100;
+    public float currentHealth;
 
     public HealthBar healthBar;
     
@@ -19,11 +20,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TakeDamage(Mathf.RoundToInt(Time.deltaTime));
+        if (currentHealth <= 50){
+            currentHealth -= Time.deltaTime * 5;
+        } else{
+            currentHealth -= Time.deltaTime;
+        }
+
+        healthBar.SetHealth(currentHealth);
+
     }
 
     // Decrease the health
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         if (currentHealth < 0){
@@ -33,7 +41,7 @@ public class Player : MonoBehaviour
     }
 
     // Increase the health
-    public void TakeBenefit(int benefit)
+    public void TakeBenefit(float benefit)
     {
         currentHealth += benefit;
         if (currentHealth > 100){

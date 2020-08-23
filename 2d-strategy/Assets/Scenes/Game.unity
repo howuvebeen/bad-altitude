@@ -462,6 +462,7 @@ MonoBehaviour:
   storyButton: {fileID: 226002188}
   teaButton: {fileID: 0}
   coffeeButton: {fileID: 0}
+  buttonList: []
 --- !u!1 &241117403
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +612,7 @@ MonoBehaviour:
   storyButton: {fileID: 226002188}
   teaButton: {fileID: 241117407}
   coffeeButton: {fileID: 522645791}
+  buttonList: []
 --- !u!1 &283739432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1203,7 @@ MonoBehaviour:
   storyButton: {fileID: 226002188}
   teaButton: {fileID: 241117407}
   coffeeButton: {fileID: 522645791}
+  buttonList: []
 --- !u!1 &627038322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1484,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 756466917}
+        m_MethodName: AppendOnClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &756466917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,6 +1514,9 @@ MonoBehaviour:
   storyButton: {fileID: 226002188}
   teaButton: {fileID: 0}
   coffeeButton: {fileID: 0}
+  buttonList:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &792079599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,6 +2193,7 @@ MonoBehaviour:
   storyButton: {fileID: 226002188}
   teaButton: {fileID: 0}
   coffeeButton: {fileID: 0}
+  buttonList: []
 --- !u!1 &1420995659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2860,7 @@ MonoBehaviour:
   storyButton: {fileID: 226002188}
   teaButton: {fileID: 0}
   coffeeButton: {fileID: 0}
+  buttonList: []
 --- !u!1 &1630281376
 GameObject:
   m_ObjectHideFlags: 0
