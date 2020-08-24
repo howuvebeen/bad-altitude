@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
 
     public Player player;
     public HealthBar healthBar;
+    public EndScript endScript;
 
     
     // Start is called before the first frame update
@@ -35,6 +36,11 @@ public class Timer : MonoBehaviour
                 sleepButton.interactable = true;
                 timeSlider = 0;
             } 
+        } 
+        
+        Debug.Log(timeStart);
+        if (timeStart <= 0){
+            endScript.SuccessLevel();
         }
     }
 
