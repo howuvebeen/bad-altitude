@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         if (currentHealth <= 50){
             currentHealth -= Time.deltaTime * 5;
         } else{
-            currentHealth -= Time.deltaTime;
+            currentHealth -= Time.deltaTime * 2;
         }
 
         healthBar.SetHealth(currentHealth);
