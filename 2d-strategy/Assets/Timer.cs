@@ -38,14 +38,17 @@ public class Timer : MonoBehaviour
             } 
         } 
         
-        Debug.Log(timeStart);
         if (timeStart <= 0){
             endScript.SuccessLevel();
         }
     }
 
     public void ClickSleep () {
-        timeStart -= 20;
+        if (timeStart < 20){
+            timeStart -= timeStart;
+        } else {
+            timeStart -= 20;
+        }
         textBox.text = Mathf.Round(timeStart).ToString();
         player.TakeBenefit(30);
         sleepButton.interactable = false;
