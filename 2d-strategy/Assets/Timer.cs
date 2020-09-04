@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeStart = 60;
+    public float timeStart = 5;
     public float timeSlider = 0;
 
     public Text textBox;
