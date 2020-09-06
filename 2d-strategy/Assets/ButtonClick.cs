@@ -34,7 +34,6 @@ public class ButtonClick : MonoBehaviour
         player.TakeDamage(4);
         musicButton.interactable = false;      
         StartCoroutine(DelayMusic());
-
     }
 
     IEnumerator DelayMusic(){

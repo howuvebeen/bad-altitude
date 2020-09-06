@@ -177,6 +177,7 @@ MonoBehaviour:
   levelOneButton: {fileID: 81266686}
   levelTwoButton: {fileID: 695183757}
   levelThreeButton: {fileID: 1575626913}
+  endScript: {fileID: 0}
 --- !u!114 &31382363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +225,7 @@ GameObject:
   - component: {fileID: 81266687}
   - component: {fileID: 81266686}
   - component: {fileID: 81266689}
+  - component: {fileID: 81266690}
   m_Layer: 5
   m_Name: LevelOne
   m_TagString: Untagged
@@ -357,6 +359,23 @@ MonoBehaviour:
   levelOneButton: {fileID: 81266686}
   levelTwoButton: {fileID: 695183757}
   levelThreeButton: {fileID: 1575626913}
+  endScript: {fileID: 81266690}
+--- !u!114 &81266690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81266684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d590aaf7d2546bca70f57f1330735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failLevel: {fileID: 0}
+  successLevel: {fileID: 0}
+  sceneIndex: 0
+  levelPassed: 0
 --- !u!1 &140839536
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +708,7 @@ GameObject:
   - component: {fileID: 695183758}
   - component: {fileID: 695183757}
   - component: {fileID: 695183760}
+  - component: {fileID: 695183761}
   m_Layer: 5
   m_Name: LevelTwo
   m_TagString: Untagged
@@ -760,12 +780,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 695183760}
-        m_MethodName: levelToLoad
+        m_MethodName: ClickLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -822,6 +842,23 @@ MonoBehaviour:
   levelOneButton: {fileID: 81266686}
   levelTwoButton: {fileID: 695183757}
   levelThreeButton: {fileID: 1575626913}
+  endScript: {fileID: 695183761}
+--- !u!114 &695183761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695183755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d590aaf7d2546bca70f57f1330735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failLevel: {fileID: 0}
+  successLevel: {fileID: 0}
+  sceneIndex: 0
+  levelPassed: 0
 --- !u!1 &1575626911
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +871,8 @@ GameObject:
   - component: {fileID: 1575626915}
   - component: {fileID: 1575626914}
   - component: {fileID: 1575626913}
+  - component: {fileID: 1575626916}
+  - component: {fileID: 1575626917}
   m_Layer: 5
   m_Name: LevelThree
   m_TagString: Untagged
@@ -904,13 +943,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 1575626916}
+        m_MethodName: ClickLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -952,6 +991,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575626911}
   m_CullTransparentMesh: 0
+--- !u!114 &1575626916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575626911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6b0e97dd5b848d0a87c2750b9631c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOneButton: {fileID: 81266686}
+  levelTwoButton: {fileID: 695183757}
+  levelThreeButton: {fileID: 1575626913}
+  endScript: {fileID: 1575626917}
+--- !u!114 &1575626917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575626911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d590aaf7d2546bca70f57f1330735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failLevel: {fileID: 0}
+  successLevel: {fileID: 0}
+  sceneIndex: 0
+  levelPassed: 0
 --- !u!1 &1772929343
 GameObject:
   m_ObjectHideFlags: 0

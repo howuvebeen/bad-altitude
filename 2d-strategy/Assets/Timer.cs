@@ -44,10 +44,10 @@ public class Timer : MonoBehaviour
     }
 
     public void ClickSleep () {
-        if (timeStart < 20){
+        if (timeStart < 90){
             timeStart -= timeStart;
         } else {
-            timeStart -= 20;
+            timeStart -= 90;
         }
         textBox.text = Mathf.Round(timeStart).ToString();
         player.TakeBenefit(30);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
@@ -9,7 +10,6 @@ public class EndScript : MonoBehaviour
     public GameObject failLevel;
     public GameObject successLevel;
 
-    public LevelScript levelScript;
     public int sceneIndex, levelPassed;
 
     public void Start () {
@@ -17,6 +17,7 @@ public class EndScript : MonoBehaviour
         successLevel.SetActive(false);
 
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        levelPassed = PlayerPrefs.GetInt("LevelPassed");
     }
 
     public void FailLevel () {
@@ -27,8 +28,7 @@ public class EndScript : MonoBehaviour
     public void SuccessLevel () {
         successLevel.SetActive(true);
         if (sceneIndex >= levelPassed){
-            levelPassed = sceneIndex;
-            levelScript.UnlockLevel(levelPassed);
+            PlayerPrefs.SetInt("LevelPassed", sceneIndex);
         }
         StartCoroutine(BackToLevel());
     }

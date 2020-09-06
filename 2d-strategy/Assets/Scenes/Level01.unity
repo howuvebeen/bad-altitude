@@ -777,7 +777,6 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -805,7 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e507b78f8924cc69781b8fa1890b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeStart: 5
+  timeStart: 100
   timeSlider: 0
   textBox: {fileID: 1565105524}
   sleepButton: {fileID: 627038326}
@@ -870,21 +869,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b6b0e97dd5b848d0a87c2750b9631c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelOneButton: {fileID: 0}
-  levelTwoButton: {fileID: 0}
-  levelThreeButton: {fileID: 0}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,7 +883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failLevel: {fileID: 629377380}
   successLevel: {fileID: 1594948174}
-  levelScript: {fileID: 519420033}
   sceneIndex: 0
   levelPassed: 0
 --- !u!1 &613109196
@@ -990,6 +973,7 @@ GameObject:
   - component: {fileID: 627038326}
   - component: {fileID: 627038327}
   - component: {fileID: 627038328}
+  - component: {fileID: 627038329}
   m_Layer: 5
   m_Name: Sleep
   m_TagString: Untagged
@@ -1142,9 +1126,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failLevel: {fileID: 629377380}
   successLevel: {fileID: 1594948174}
-  levelScript: {fileID: 0}
   sceneIndex: 0
   levelPassed: 0
+--- !u!114 &627038329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627038322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6b0e97dd5b848d0a87c2750b9631c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOneButton: {fileID: 0}
+  levelTwoButton: {fileID: 0}
+  levelThreeButton: {fileID: 0}
+  endScript: {fileID: 0}
 --- !u!1 &629377380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,7 +2077,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failLevel: {fileID: 629377380}
   successLevel: {fileID: 1594948174}
-  levelScript: {fileID: 1377171218}
   sceneIndex: 0
   levelPassed: 0
 --- !u!114 &1377171218
@@ -2096,6 +2094,7 @@ MonoBehaviour:
   levelOneButton: {fileID: 0}
   levelTwoButton: {fileID: 0}
   levelThreeButton: {fileID: 0}
+  endScript: {fileID: 0}
 --- !u!1 &1392052612
 GameObject:
   m_ObjectHideFlags: 0
