@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<!--     <img src="gifs/preview.gif" alt="preview"> -->
+<!--     <img src="preview.gif" alt="preview"> -->
 </p>
 
 <h2 align="center">Bad Altitude</h2>
