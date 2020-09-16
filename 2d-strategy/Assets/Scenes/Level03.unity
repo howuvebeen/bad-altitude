@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e507b78f8924cc69781b8fa1890b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeStart: 100
+  timeStart: 140
   timeSlider: 0
   textBox: {fileID: 1565105524}
   sleepButton: {fileID: 627038326}
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e507b78f8924cc69781b8fa1890b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeStart: 100
+  timeStart: 140
   timeSlider: 0
   textBox: {fileID: 1565105524}
   sleepButton: {fileID: 627038326}
@@ -1442,6 +1442,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failLevel: {fileID: 629377380}
   successLevel: {fileID: 1594948174}
+  sceneIndex: 0
+  levelPassed: 0
 --- !u!1 &629377380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failLevel: {fileID: 629377380}
   successLevel: {fileID: 1594948174}
+  sceneIndex: 0
+  levelPassed: 0
 --- !u!1 &1392052612
 GameObject:
   m_ObjectHideFlags: 0
