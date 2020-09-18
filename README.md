@@ -5,6 +5,7 @@
 <br />
 <p align="center">
 <img src="images/preview.png" alt="preview">
+* Design not yet implemented *
 </p>
 
 <h2 align="center">Bad Altitude</h2>
