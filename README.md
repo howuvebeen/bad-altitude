@@ -38,6 +38,8 @@
   * [Ideation](#ideation)
   * [User Interface](#user-interface)
   * [Game Balancing](#game-balancing)
+  * [Animation](#animation)
+  * [Music/Art](#music/art)
 * [License](#license)
 
 
@@ -139,6 +141,12 @@ Visit the link to play the game.
 
 
 ## Game Balancing
+
+
+## Animation
+
+
+## Music/Art
 
 
 <!-- LICENSE -->
